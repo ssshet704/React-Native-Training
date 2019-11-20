@@ -10,14 +10,13 @@ import React from 'react';
 import { SafeAreaView } from 'react-native';
 
 import Counter from './src/Containers/Counter/Counter';
+import {styles} from './App.Styles';
 
 const App: () => React$Node = () => {
   return (
-    <>
-      <SafeAreaView>
+      <SafeAreaView style={styles.layout}>
         <Counter></Counter>
       </SafeAreaView>
-    </>
   );
 };
 
